@@ -1,0 +1,457 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/77d4172b70.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+
+    <title>Lakhan Films</title>
+
+    <style>
+        .cover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/6.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+
+            animation: slider 40s infinite linear;
+            animation-delay: 8s;
+        }
+
+        .wedding-showcase {
+            list-style: none;
+            width: 100%;
+        }
+
+        .wedding-showcase li {
+            display: block;
+            float: left;
+            width: 11.1%;
+
+        }
+
+        .wedding-photo {
+            height: 150px;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            background-position: center;
+
+        }
+
+        .wedding-photo img {
+            opacity: 0.6;
+            width: 100%;
+            height: auto;
+            transform: scale(1.0);
+            transition: transform 0.5s, opacity: 0.5s;
+        }
+
+        .wedding-photo img:hover {
+            opacity: 1;
+            transform: scale(1.03);
+        }
+
+
+        @keyframes slider {
+            20% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/2.JPG);
+            }
+
+            40% {
+                background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/3.JPG);
+            }
+
+            50% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/4.JPG);
+            }
+
+            60% {
+                background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/5.JPG);
+            }
+ 70% {
+                background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/6.JPG);
+            }
+             85% {
+                background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/back/7.JPG);
+            }
+         }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+
+            .logo {
+                font-size: o.7em;
+            }
+
+            .social {
+                font-size: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cover">
+
+        <div class="navbar-fixed" style="position: fixed; top: 0;">
+            <nav class="nav-wrapper black lighten-1 ">
+                <div class="container">
+                    <a href="#" class="brand-logo" style="font-family: 'Merienda One', cursive;"><span class="logo">Lakhan Films</span></a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down ">
+                        <li><a href="#services"> Services</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#"> About</a></li> -->
+                        <li><a class="orange btn" href="album.html">Album</a></li>
+                    </ul>
+</div>
+</nav>
+
+        </div>
+
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a class="sidenav-close" href="#services">Services</a></li>
+            <li><a class="sidenav-close" href="#work">Work</a></li>
+            <li><a class="sidenav-close" href="#testimonials">Testimonials</a></li>
+            <li><a class="sidenav-close" href="#contact">Contact</a></li>
+            <li><a class="sidenav-close" href="#">About</a></li>
+            <li><a class="sidenav-close" href="album.html">Album</a></li>
+        </ul>
+        <div class="covertext center-align" style="padding-top: 250px;">
+            <p class="white-text" style="font-size: 30px; font-family:  monospace; font-weight: 800;">We take photos as a return ticket to a moment otherwise gone.</p>
+            <p class="white-text" style="font-size: 20px; font-family: monospace;">Lakhan Films for an experience more real than reality</p>
+        </div>
+        <div class="col s6 l4 center-align">
+            <a href="https://m.facebook.com/Lakhan-Films-2107307379302185/?ref=bookmarks"><i class="fab fa-facebook-f" style="color: #0f0fb2; font-size: 40px; padding-right: 25px;"></i></a>
+            <a href="#"><i class="fab fa-instagram" style="color: #e83c99; font-size: 40px; padding-right: 25px;"></i></a>
+            <a href="https://www.youtube.com/channel/UC07uxxaj41QcUju7lkj2FsA"><i class="fab fa-youtube" style="color: red; font-size: 40px;"></i></a>
+        </div>
+
+        <!----services---->
+
+        <div class="services scrollspy" id="services">
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 200px;">Services</h4>
+            <hr class="red-text " style="width: 4%;">
+        </div>
+        <div class="container-fluid">
+            <p class="white-text center-align" style="font-family: monospace; font-size: 18px;">Employing unmatched passion, unfathomable photography skills and years of expertise, our photographers deliver perfect shots that can bring a hearty smile on anybody’s face.</p>
+            <p class="white-text center-align" style="font-family: monospace; font-size: 16px;">Lakhan Films is based out of Kota and provide services throughout India. We take on professional photography assignments which include photography, cinematography, portfolio shoot, wedding shoot, event photography, video shoot and much more.</p>
+        </div>
+        <div class="container">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"><img class="responsive-img materialboxed" src="images/wedding12.JPG"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">WEDDING PHOTOGRAPHY</p>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"><img class="responsive-img materialboxed" src="images/prewedtitle.jpg"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">PRE WEDDING PHOTOGRAPHY</p>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"><img class="responsive-img materialboxed" src="images/cinematographytitle.jpg"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">CINEMATOGRAPHY</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 20px;">
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"><img class="responsive-img materialboxed" src="images/portfolioshoot.jpg"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">PORTFOLIO SHOOT</p>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"> <img class="responsive-img materialboxed" src="images/baby.jpg"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">BABY SHOOT</p>
+                    </div>
+                </div>
+
+                <div class="col s12 l4">
+                    <div class="card-transparent">
+                        <a href="#"> <img class="responsive-img materialboxed" src="images/familyportraits.jpg"></a>
+                        <p class="white-text center-align" style="font-family: monospace; font-size: 20px;">FAMILY PORTRAIT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----WORK----->
+        <div class="work scrollspy" id="work">
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 20px;">OUR WORK</h4>
+            <hr class="red-text " style="width: 4%;">
+
+            <!-- tabs -->
+            <div class="tabsalign left-align" style="padding-left: 20px;">
+                <ul class="tabs transparent ">
+                    <li class="tab col s4">
+                        <a href="#wedding" class="active blue-text lighten-4" style="font-weight: 500; font-size: 20px;">Wedding</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#prewedding" class="red-text lighten-1" style="font-weight: 500; font-size: 20px;">Pre Wedding</a>
+                    </li>
+                    <li class="tab col s4">
+                        <a href="#portfolio" class="green-text lighten-4" style="font-weight: 500; font-size: 20px;">Portfolio</a>
+                    </li>
+                    
+                    <li class="tab col s4">
+                        <a href="#video" class="orange-text lighten-4" style="font-weight: 500; font-size: 20px;">Video Shoot</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="row wedding" id="wedding">
+
+                <div class="col s6 l2">
+                    <img src="images/wedding/1.JPG" class="responsive-img materialboxed">
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/wedding/2.JPG" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/wedding/3.JPG" class="responsive-img materialboxed">
+
+                </div>
+
+
+                <div class="col s6 l2">
+
+                    <img src="images/wedding/4.JPG" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+
+                    <img src="images/wedding/5.JPG" class="responsive-img materialboxed">
+
+
+                </div>
+                <div class="col s6 l2">
+
+                    <a href=""><img src="images/wedding/6.JPG" class="responsive-img materialboxed"></a>
+
+                </div>
+            </div>
+            <!----prewed---->
+            <div class="row wedding" id="prewedding">
+
+                <div class="col s6 l2">
+                    <img src="images/prewedding/1.jpg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/prewedding/2.jpg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/prewedding/3.jpg" class="responsive-img materialboxed">
+
+                </div>
+
+
+                <div class="col s6 l2">
+
+                    <img src="images/prewedding/4.jpg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+
+                    <img src="images/prewedding/5.jpg" class="responsive-img materialboxed">
+
+
+                </div>
+                <div class="col s6 l2">
+
+                    <a href=""><img src="images/wedding/6.JPG" class="responsive-img materialboxed"></a>
+
+                </div>
+            </div>
+            <!------portfolio----->
+            
+            <div class="row wedding" id="portfolio">
+
+                <div class="col s6 l2">
+                    <img src="images/portfolio/1.jpg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/portfolio/2.jpeg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+                    <img src="images/portfolio/3.jpeg" class="responsive-img materialboxed">
+
+                </div>
+
+
+                <div class="col s6 l2">
+
+                    <img src="images/portfolio/4.jpeg" class="responsive-img materialboxed">
+
+                </div>
+                <div class="col s6 l2">
+
+                    <img src="images/portfolio/5.jpeg" class="responsive-img materialboxed">
+
+
+                </div>
+                <div class="col s6 l2">
+
+                    <a href=""><img src="images/portfolio/6.jpeg" class="responsive-img materialboxed"></a>
+
+                </div>
+            </div>
+            <!----video---->
+            
+            
+             <div class="row wedding" id="video">
+
+                <div class="col s6 l3">
+                   <a href="https://www.youtube.com/watch?v=O1vU4dGa_Uc"> <img src="images/New folder/1.JPG" class="responsive-img materialboxed"></a>
+
+                </div>
+                <div class="col s6 l3">
+                    <a href="https://www.youtube.com/watch?v=LRdHZgihLdI"><img src="images/New folder/2.jpg" class="responsive-img materialboxed"></a>
+
+                </div>
+                <div class="col s6 l3">
+                   <a href="https://www.youtube.com/watch?v=O1vU4dGa_Uc"> <img src="images/New folder/3.JPG" class="responsive-img materialboxed"></a>
+
+                </div>
+
+
+                <div class="col s6 l3">
+
+                    <a href="https://www.youtube.com/watch?v=FCSLPvP4kCw"><img src="images/New folder/4.JPG" class="responsive-img materialboxed"></a>
+
+                </div>
+                
+            </div>
+                   </div>
+        <!----Testimonials---->
+        <div class="container-fluid testmonials scrollspy" id="testimonials">
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 40px;">Testimonials</h4>
+            <hr style="width: 6%;">
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image"  class="responsive-img">
+                            <img src="images/cust1.jpg " alt="" >
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Himani Maheshwari</span>
+                            <p>It's having an wonderful experience while shooting with them.. The elegance, style of shooting n perfection is completely phenomenal... 250/250 guest appreciated the work by Lakhan Films. No one can match their class in terms of photography. I must recommend people to go for Lakhan Films because we do marriage once in our lifetime. Thank you so much, once again.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/cust2.jpg" alt="">
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Lavish Bhagtani</span>
+                            <p>Lakhan Films gave us the most memorable lifetime experience at our pre-wedding and wedding. They are an exceptional team with no dearth of ideas and amazing creativity. This team has already become integral part of our family, capturing tons of memories in the most fun way possible. They have done a great work with the special camera effects. They believe in work performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/cust3.jpg" alt="">
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Shalini Khandelwal</span>
+                            <p>Lakhan Films is one of the best photographer in Kota. My pre wedding video and wedding videos were made by their team which is amazing just because all person were really friendly and polite and captured natural poses. I just wanna say if you book them for your events then u will surely expect something special for which you would pay . </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----Contact---->
+
+        <div class="contact scrollspy" id="contact" style="padding-bottom: 30px;">
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 4px;">Contact Details</h4>
+            <hr style="width: 6%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6" style="padding-top: 40px;">
+                        <div class="btn transparent" style="height: 250px; ">
+                            <p class="red-text left-align" style="padding-top: 10px; font-size: 22px; font-weight: 500; ">We are Social</p>
+                            <p class="white-text">Follow us on social network accounts.</p>
+                            <a href="https://www.facebook.com/Lakhan-Films-2107307379302185" class="btn-small social">Facebook</a>
+                            <a href="https://www.instagram.com/lakhan_films/" class="btn-small social">Instagram</a>
+                            <a href="https://www.youtube.com/channel/UC07uxxaj41QcUju7lkj2FsA" class="btn-small social">You Tube</a>
+
+                        </div>
+                    </div>
+                    <div class="col s12 l6" style="padding-top: 40px;">
+                        <div class="btn transparent" style="height: 250px;">
+                            <p class="red-text left-align" style="padding-top: 10px;  font-size: 22px; font-weight: 500;">QUICK CONTACT</p>
+                            <p class="white-text left-align" style="font-family: monospace; ">Email:<span style="text-transform: lowercase;"> lakshyakhandelwal1995@gmail.com</span></p>
+                            <p class="white-text left-align">Call: 8387930992, 9414378289</p>
+                            <p class="white-text left-align">Timing: All days 10:00 AM to 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer center-align" style="background-color: gainsboro; margin-top: 40px; height: 42px; padding-top: 1px;">
+            <h6 class="text-center">Copyright &copy; 2020, Lakhan Films</h6>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.scrollspy').scrollSpy();
+            });
+
+        </script>
+
+</body>
+
+</html>
